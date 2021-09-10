@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,31 +20,80 @@
     <link href="./css/swiper.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./js/typing.js">
-    
+
     <!-- Typed.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- Favicon -->
     <link rel="icon" href="./assets/images/favicon.png">
     <style>
-        .ingyuCenter{
+        .ingyuCenter {
             position: relative;
             left: 50%;
             transform: translateX(-50%);
         }
-        
 
-        @media (max-width: 991px){
+        .project_class {
+            background-color: #eee;
+            border-radius: 20px;
+        }
+
+        .project_class * {
+            color: #111;
+        }
+
+        .project_class h2 {
+            margin-top: 10px;
+        }
+
+        .row {
+            --bs-gutter-x: 0 !important;
+        }
+
+        .col-lg-3 {
+            --bs-gutter-x: 1.5rem !important;
+        }
+
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            background-image: none;
+        }
+
+
+        @media (max-width: 991px) {
             .col-lg-3 {
                 width: 50% !important;
+                --bs-gutter-x: 1.5rem !important;
             }
-            
+
+            .project_label {
+                display: block !important;
+            }
+
+            .project_content p {
+                padding-left: 24px;
+                display: block !important;
+            }
+
         }
-        
+
+        @media (max-width: 768px) {
+            .youtubePlayer {
+                width: 100% !important;
+            }
+
+            .my_content_imageslider {
+                padding: 0 !important;
+            }
+
+        }
+
+        @media (max-width: 576px) {}
     </style>
 </head>
+
 <body>
-    
+
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
         <div class="container">
@@ -54,11 +104,12 @@
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <a class="navbar-brand logo-text" href="index.html">Portfolio</a>
 
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#header">Home</a>
@@ -109,7 +160,7 @@
 
     <!-- Home -->
     <section class="home py-5 d-flex align-items-center" id="header">
-        <div class="container text-light py-5"  data-aos="fade-right"> 
+        <div class="container text-light py-5" data-aos="fade-right">
             <h1 class="headline"><span class="home_text">Backend</span>개발자<br>포트폴리오</h1>
             <p class="para para-light py-3">안녕하세요. Backend 개발자를 꿈꾸는 노인규의 포트폴리오 페이지입니다.</p>
             <!-- <div class="d-flex align-items-center">
@@ -126,7 +177,7 @@
         </div> <!-- end of container -->
     </section> <!-- end of home -->
 
-    
+
     <!-- Information -->
     <!-- <section class="information">
         <div class="container-fluid">  
@@ -149,8 +200,8 @@
             </div>
         </div> -- end of container --
     </section> -- end of information -- -->
-    
-    
+
+
 
     <!-- About -->
     <!-- <section class="about d-flex align-items-center text-light py-5" id="about">
@@ -175,11 +226,12 @@
     </section> -- end of about -- -->
 
     <!-- Work -->
-    <section class="work d-flex align-items-center py-5" id="about" >
+    <section class="work d-flex align-items-center py-5" id="about">
         <div class="container-fluid text-light">
             <div class="row">
                 <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right">
-                    <img class="img-fluid" src="./assets/images/img1.png" alt="about" style="position: relative; left: 50%; transform: translateX(-50%);">        
+                    <img class="img-fluid" src="./assets/images/img1.png" alt="about"
+                        style="position: relative; left: 50%; transform: translateX(-50%);">
                 </div>
                 <div class="col-lg-5 d-flex align-items-center px-4 py-3" data-aos="">
                     <div class="row">
@@ -188,12 +240,12 @@
                         </div>
                         <div class="container" data-aos="fade-up">
                             <div class="row g-5">
-                                <div class="col-6 text-start" >
+                                <div class="col-6 text-start">
                                     <i class="fas fa-user fa-4x"></i>
                                     <p>이름</p>
                                     <h2>노인규</h2>
                                 </div>
-                                <div class="col-6" >
+                                <div class="col-6">
                                     <i class="fas fa-birthday-cake fa-4x"></i>
                                     <p>생년월일</p>
                                     <h2>1995-10-20</h2>
@@ -221,8 +273,8 @@
     <!-- Services -->
     <section class="services d-flex align-items-center py-5" id="services">
         <div class="container text-light">
-            <div class="text-center pb-4" >
-                <h1>SKILLS</h1> 
+            <div class="text-center pb-4">
+                <h1>SKILLS</h1>
             </div>
             <div class="row gy-4 py-2" data-aos="zoom-in">
                 <div class="col-lg-3">
@@ -237,14 +289,14 @@
                         <div>
                             <img src="assets/images/html.png" class="ingyuCenter" alt="">
                         </div>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card bg-transparent">
                         <div>
                             <img src="assets/images/js.png" class="ingyuCenter" alt="">
                         </div>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card bg-transparent">
@@ -258,14 +310,14 @@
                         <div>
                             <img src="assets/images/nodejs.png" class="ingyuCenter" alt="">
                         </div>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card bg-transparent">
                         <div>
                             <img src="assets/images/java.png" class="ingyuCenter" alt="">
                         </div>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card bg-transparent">
@@ -279,7 +331,7 @@
                         <div>
                             <img src="assets/images/oracle.png" class="ingyuCenter" alt="">
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -287,24 +339,462 @@
 
 
     <!-- Plans -->
-    <section class="plans d-flex align-items-center py-5" id="plans">
-        <div class="container text-light" >
+    <section class="plans d-flex align-items-center py-5" style="height: auto;" id="plans">
+        <div class="container text-light">
             <div class="text-center pb-4">
-                <h1>PROJECTS</h1> 
+                <h1>PROJECTS</h1>
             </div>
             <div class="row gy-4" data-aos="zoom-in">
-                <div class="col-lg-4" style="text-align: center;">
-                    준비중
+
+
+
+                <div class="row gy-4 project_class" data-aos="zoom-in">
+                    <div class="row" style="text-align: center; padding: 10px;">
+                        <div>
+                            <h2>아픈 반려견을 위한 일정관리</h2>
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            2021.8 (3인 팀 프로젝트)
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 my_content_imageslider"
+                                style="padding-left: 70px; padding-right: 70px;">
+                                <div id="carouselExampleControlsNoTouching3"
+                                    style="top: 50%; transform: translateY(-50%);" class="carousel slide"
+                                    data-bs-touch="false" data-bs-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a href="assets/images/avan/avan01.png" target="_blank">
+                                                <img src="assets/images/avan/avan01.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/avan/avan02.png" target="_blank">
+                                                <img src="assets/images/avan/avan02.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/avan/avan03.png" target="_blank">
+                                                <img src="assets/images/avan/avan03.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/avan/avan04.png" target="_blank">
+                                                <img src="assets/images/avan/avan04.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/avan/avan05.png" target="_blank">
+                                                <img src="assets/images/avan/avan05.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/avan/avan06.png" target="_blank">
+                                                <img src="assets/images/avan/avan06.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/avan/avan07.png" target="_blank">
+                                                <img src="assets/images/avan/avan07.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/avan/avan08.png" target="_blank">
+                                                <img src="assets/images/avan/avan08.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/avan/avan09.png" target="_blank">
+                                                <img src="assets/images/avan/avan09.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControlsNoTouching3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"><i
+                                                class="fas fa-arrow-circle-left" style="font-size: 35px;"></i></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControlsNoTouching3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"><i
+                                                class="fas fa-arrow-circle-right" style="font-size: 35px;"></i></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" style="text-align: left;">
+                                <div class="row">
+                                    <p>4가구당 1가구는 반려동물과 함께 살아가고 있습니다. 그 중 비율이 높은 강아지를 대상으로 집중 관리할 수 있는 서비스를 만들고 싶었습니다.
+                                    
+                                    <div style="height: 20px;"></div>
+                                    Spring으로 처음 만든 프로젝트라 더 의미가 있고 카카오 API와 Fullcalendar 라이브러리를 공부하는 시간을 갖게 되어 성취감이 큰
+                                        프로젝트입니다.</p>
+
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 주요 기능</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">회원가입, 일정관리, 모바일 푸시 알림, 주변병원 검색, 각종 정보</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 개발 툴</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">Eclipse, STS, VS Code, SQL Developer, Android
+                                                Studio</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 사용 언어</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">JAVA, Oracle(11g Express), Html5, CSS,
+                                                Javascript, JSP</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 사용 기술</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">JDBC, Spring, jQuery, Ajax, 카카오 API,
+                                                Fullcalendar, FCM, Bootstrap, fontawesome</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="col-lg-4" style="text-align: center;">
-                    준비중
+                <div class="row gy-4 project_class" data-aos="zoom-in">
+                    <div class="row" style="text-align: center; padding: 10px;">
+                        <div>
+                            <h2>학사관리 프로그램</h2>
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            2021.04(개인 프로젝트)
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <iframe class="youtubePlayer" width="80%" height="315"
+                                    src="https://www.youtube.com/embed/U-vEjlqPPrc" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="col-lg-6" style="text-align: left;">
+                                <div class="row">
+                                    <p>Java로 Oracle과 연동한 학사관리 프로그램입니다.
+                                        DB에 데이터 입출력을 공부하기 위해 간단한 CRUD만 만들었습니다.
+                                    <div style="height: 20px;"></div>
+                                    Java 개발자로서 DB와 통신하는데 가장 기초적인 발판이 된 프로젝트였습니다.</p>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 주요 기능</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">전체 정보 조회, 정보 등록, 단일 정보 조회, 정보 수정, 정보 삭제</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 개발 툴</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">Eclipse, SQL Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 사용 언어</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">JAVA, Oracle(11g Express)</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 사용 기술</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">JDBC, Java Swing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="col-lg-4" style="text-align: center;">
-                    준비중
+                <div class="row gy-4 project_class" data-aos="zoom-in">
+                    <div class="row" style="text-align: center; padding: 10px;">
+                        <div>
+                            <h2>파일 완전삭제 프로그램</h2>
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            2020.9 ~ 2020.11(졸업작품 5인 팀 프로젝트)
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 my_content_imageslider"
+                                style="padding-left: 70px; padding-right: 70px;">
+                                <div id="carouselExampleControlsNoTouching2"
+                                    style="top: 50%; transform: translateY(-50%);" class="carousel slide"
+                                    data-bs-touch="false" data-bs-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a href="assets/images/ez/ez00.png" target="_blank">
+                                                <img src="assets/images/ez/ez00.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/ez/ez01.png" target="_blank">
+                                                <img src="assets/images/ez/ez01.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/ez/ez02.png" target="_blank">
+                                                <img src="assets/images/ez/ez02.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/ez/ez03.png" target="_blank">
+                                                <img src="assets/images/ez/ez03.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/ez/ez04.png" target="_blank">
+                                                <img src="assets/images/ez/ez04.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/ez/ez05.png" target="_blank">
+                                                <img src="assets/images/ez/ez05.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/ez/ez06.png" target="_blank">
+                                                <img src="assets/images/ez/ez06.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/ez/ez07.png" target="_blank">
+                                                <img src="assets/images/ez/ez07.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/ez/ez08.png" target="_blank">
+                                                <img src="assets/images/ez/ez08.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/ez/ez09.png" target="_blank">
+                                                <img src="assets/images/ez/ez09.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"><i
+                                                class="fas fa-arrow-circle-left" style="font-size: 35px;"></i></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"><i
+                                                class="fas fa-arrow-circle-right" style="font-size: 35px;"></i></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" style="text-align: left;">
+                                <div class="row">
+                                    <p>중고 하드디스크로 개인정보가 유출되기도 합니다. 휴지통 비우기, 영구삭제를 해도 파일이 복원될 수 있다는 것인데 파일 삭제 시 복구하지 못하도록 여러번 덮어씌우고 삭제하기 전에 파일을 암호화하여 서버에 저장하는 프로그램을 개발하고자 했습니다.
+                                    <div style="height: 20px;"></div>
+                                    개인정보라는 중요한 데이터를 지키기 위해 밤을 새워가며 많은 공을 들인 만큼 정보보안에 한 발자국 다가선 것 같아 이 프로그램에 자부심을 느꼈습니다.
+                                     </p>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 주요 기능</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">파일 완전 삭제, 회원가입, 암호화된 파일 DB에 저장, 복호화하여 다운로드, 30일
+                                                이후 자동 삭제</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 개발 툴</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">VS Code, C++, Android Studio, Postman</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 사용 언어</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">C++, MongoDB Cloud, Node.js, AngularJS, Java,
+                                                Javascript, HTML5, CSS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div> <!-- end of row -->
+
+                <div class="row gy-4 project_class" data-aos="zoom-in">
+                    <div class="row" style="text-align: center; padding: 10px;">
+                        <div>
+                            <h2>중부위키</h2>
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            2019.11 ~ 2019.12(학부 3학년 4인 팀 프로젝트)
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 my_content_imageslider"
+                                style="padding-left: 70px; padding-right: 70px;">
+                                <div id="carouselExampleControlsNoTouching"
+                                    style="top: 50%; transform: translateY(-50%);" class="carousel slide"
+                                    data-bs-touch="false" data-bs-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a href="assets/images/jbu/jbu01.png" target="_blank">
+                                                <img src="assets/images/jbu/jbu01.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/jbu/jbu02.png" target="_blank">
+                                                <img src="assets/images/jbu/jbu02.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/jbu/jbu03.png" target="_blank">
+                                                <img src="assets/images/jbu/jbu03.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/jbu/jbu04.png" target="_blank">
+                                                <img src="assets/images/jbu/jbu04.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/jbu/jbu05.png" target="_blank">
+                                                <img src="assets/images/jbu/jbu05.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/jbu/jbu06.png" target="_blank">
+                                                <img src="assets/images/jbu/jbu06.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/jbu/jbu07.png" target="_blank">
+                                                <img src="assets/images/jbu/jbu07.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/jbu/jbu08.png" target="_blank">
+                                                <img src="assets/images/jbu/jbu08.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/jbu/jbu09.png" target="_blank">
+                                                <img src="assets/images/jbu/jbu09.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a href="assets/images/jbu/jbu10.png" target="_blank">
+                                                <img src="assets/images/jbu/jbu10.png" class="d-block w-100" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"><i
+                                                class="fas fa-arrow-circle-left" style="font-size: 35px;"></i></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"><i
+                                                class="fas fa-arrow-circle-right" style="font-size: 35px;"></i></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" style="text-align: left;">
+                                <div class="row">
+                                    <p>회원과 비회원 모두 학교에 관련된 소식들을 위키형식으로 쉽고 간편하게 접근할 수 있도록 개발을 했습니다. 
+                                    <div style="height: 20px;"></div>
+                                    처음으로 하게 된 팀 프로젝트라 아쉬움과 더불어 보람차게 마무리를 했던 프로젝트입니다.
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 주요 기능</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">회원, 비회원, 게시판, reCAPTCHA</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 개발 툴</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">VS Code, MongoDB Compass</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-lg-3">
+                                            <b>- 사용 언어</b>
+                                        </div>
+                                        <div class="col-lg-9 project_content">
+                                            <p style="display: inline;">MongoDB, Node.js, AngularJS, Javascript, HTML5, CSS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
         </div> <!-- end of container -->
     </section> <!-- end of plans -->
 
@@ -522,10 +1012,10 @@
 -->
 
     <!-- Location -->
-    <section class="location text-light py-5" id="contact"> 
+    <section class="location text-light py-5" id="contact">
         <div class="container" data-aos="zoom-in">
             <div class="text-center pb-4">
-                <h1>CONTACT</h1> 
+                <h1>CONTACT</h1>
             </div>
             <div class="row">
                 <div class="col-lg-4 d-flex align-items-center">
@@ -535,14 +1025,14 @@
                         <p>경기도 고양시</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex align-items-center" >
+                <div class="col-lg-4 d-flex align-items-center">
                     <div class="p-2"><i class="fas fa-mobile-alt fa-3x"></i></div>
                     <div class="ms-2">
                         <h6>CONTACT</h6>
                         <p>010 - 6222 - 1101</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex align-items-center" >
+                <div class="col-lg-4 d-flex align-items-center">
                     <div class="p-2"><i class="far fa-envelope fa-3x"></i></div>
                     <div class="ms-2">
                         <h6>E-MAIL</h6>
@@ -553,7 +1043,7 @@
         </div> <!-- end of container -->
     </section> <!-- end of location -->
 
- <!--
+    <!--
     -- Footer --
     <section class="footer text-light">
         <div class="container">
@@ -640,13 +1130,13 @@
                     </div>
                 </div> end of col -- 
             -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+    </div> <!-- end of row -->
+    </div> <!-- end of container -->
     </section> <!-- end of footer -->
 
 
     <!-- Bottom -->
-    <div class="bottom py-2 text-light" >
+    <div class="bottom py-2 text-light">
         <div class="container d-flex justify-content-between">
             <div>
                 <p>Copyright © NoInGyu</p><br>
@@ -654,19 +1144,20 @@
             </div>
         </div> <!-- end of container -->
     </div> <!-- end of bottom -->
- 
-    
+
+
     <!-- Back To Top Button -->
     <button onclick="topFunction()" id="myBtn">
         <img src="assets/images/up-arrow.png" alt="alternative">
     </button>
     <!-- end of back to top button -->
-    
+
     <!-- Scripts -->
     <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
     <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
     <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
-    <script src="./js/script.js"></script>  <!-- Custom scripts -->
+    <script src="./js/script.js"></script> <!-- Custom scripts -->
 </body>
+
 </html>

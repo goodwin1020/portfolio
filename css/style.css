@@ -73,7 +73,7 @@ li {
 	position: relative;
 }
 
-.services,
+.plans,
 .work,
 .contact,
 .testimonial,
@@ -81,8 +81,8 @@ li {
   	background-color: var(--primary);
 }
 
+.services,
 .about,
-.plans,
 .company,
 .newsletter,
 .location {
@@ -171,7 +171,7 @@ li {
 
 .offcanvas-collapse.open {
 	visibility: visible;
-	transform: translateX(-100%);
+	transform: translateX(-30%);
 }
 
 .navbar .navbar-nav {
